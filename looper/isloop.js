@@ -3,6 +3,10 @@
 //Complete this algo
 const isLoop = (linkedlist) => {
 
+    if(linkedlist.tail.next) return true
+    console.log(linkedlist.head.value, linkedlist.tail.next);
+    return false
+
 };
 
 
