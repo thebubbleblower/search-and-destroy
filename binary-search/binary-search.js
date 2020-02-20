@@ -3,13 +3,13 @@
 // Complete this algo
 const binarySearch = (array, target) => {
 
-	if ( target < array[0] || target > array[array.length - 1]){
-		return false;
-	}
-
 	let midpoint;
 	let min = 0;
 	let max = array.length - 1;
+
+	if ( target < array[min] || target > array[max]){
+		return false;
+	}
 
 	if ( array[min] === target || array[max] === target ) {
 		return true;
