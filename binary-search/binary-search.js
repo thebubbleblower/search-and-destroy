@@ -7,23 +7,9 @@ const binarySearch = (array, target) => {
 		return false;
 	}
 
-	let midpoint = Math.floor(array.length/2);
+	let midpoint;
 	let min = 0;
 	let max = array.length - 1;
-
-	// if ( array[midpoint] === target ) {
-	// 	return true;
-	// }
-
-	// if ( target < array[midpoint] ) {
-	// 	min = 0;
-	// 	max = midpoint;
-	// }
-
-	// if ( target > array[midpoint] ) {
-	// 	min = midpoint;
-	// 	max = array.length - 1;
-	// }
 
 	if ( array[min] === target || array[max] === target ) {
 		return true;
